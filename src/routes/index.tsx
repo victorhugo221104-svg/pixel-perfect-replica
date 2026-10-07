@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import renato from "@/assets/renato.jpg.asset.json";
 import { Check, ShieldCheck, Lightbulb, ArrowRight, ArrowDown } from "lucide-react";
 
 const CHECKOUT = "https://pay.kiwify.com.br/Oc9ucVp";
 const IMG = "https://receitasrenatomoreira.com/wp-content/uploads/2026/08/";
-const HERO = IMG + "perfil-1.png";
+const HERO = renato.url;
 const COVER = IMG + "ChatGPT-Image-30-de-ago.-de-2026-13_32_20.png";
 const PREVIEWS = ["preview_page1.jpg", "preview_page2.jpg", "preview_page3.jpg"].map((p) => IMG + p);
-const AUTHOR = IMG + "perfil-2.png";
+const AUTHOR = renato.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -16,9 +17,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Receitas do Campo — Renato Moreira" },
       { property: "og:description", content: "73 recetas sin azúcar refinada, con el paso a paso completo. Acceso inmediato." },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: HERO },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: HERO },
     ],
   }),
   component: Index,
@@ -112,7 +111,7 @@ function Index() {
             <a href="#conteudo" className="flex items-center justify-center gap-2 px-4 py-3 font-bold text-secondary underline underline-offset-4">QUÉ HAY ADENTRO <ArrowRight className="size-4" /></a>
           </div>
         </div>
-        <img src={HERO} alt="Renato Moreira" className="aspect-square w-full rounded-3xl object-cover shadow-soft" />
+        <img src={HERO} alt="Renato Moreira" className="aspect-square w-full rounded-3xl object-cover object-top shadow-soft" />
       </section>
 
       <section className="mx-auto max-w-5xl px-5">
@@ -262,7 +261,7 @@ function Index() {
       {/* OFERTA FINAL */}
       <section className="bg-card py-20">
         <div className="mx-auto max-w-md px-5 text-center">
-          <img src={AUTHOR} alt="Renato Moreira" loading="lazy" className="mx-auto size-28 rounded-full object-cover shadow-soft" />
+          <img src={AUTHOR} alt="Renato Moreira" loading="lazy" className="mx-auto size-28 rounded-full object-cover object-top shadow-soft" />
           <p className="eyebrow mt-6">Libro digital ilustrado · +200 páginas · primera edición</p>
           <h2 className="mt-3 text-4xl font-bold">Receitas do Campo</h2>
           <p className="mt-2 font-serif italic text-muted-foreground">73 recetas sin azúcar refinada que mi abuela ya preparaba antes de que se pusieran de moda</p>
