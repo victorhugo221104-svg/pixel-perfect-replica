@@ -4,7 +4,7 @@ import { Check, ShieldCheck, Lightbulb, ArrowRight, ArrowDown } from "lucide-rea
 
 const CHECKOUT = "https://pay.kiwify.com.br/Oc9ucVp";
 const IMG = "https://receitasrenatomoreira.com/wp-content/uploads/2026/08/";
-const HERO = renato.url;
+const HERO = "/foto-rafael-molina-studio.jpg";
 const COVER = IMG + "ChatGPT-Image-30-de-ago.-de-2026-13_32_20.png";
 const PREVIEWS = ["preview_page1.jpg", "preview_page2.jpg", "preview_page3.jpg"].map((p) => IMG + p);
 const AUTHOR = renato.url;
@@ -111,7 +111,7 @@ function Index() {
             <a href="#conteudo" className="flex items-center justify-center gap-2 px-4 py-3 font-bold text-secondary underline underline-offset-4">QUÉ HAY ADENTRO <ArrowRight className="size-4" /></a>
           </div>
         </div>
-        <img src={HERO} alt="Renato Moreira" className="aspect-square w-full rounded-3xl object-cover object-top shadow-soft" />
+        <img src={HERO} alt="Rafael Molina" className="aspect-[3/4] w-full rounded-3xl object-contain object-center shadow-soft" />
       </section>
 
       <section className="mx-auto max-w-5xl px-5">
