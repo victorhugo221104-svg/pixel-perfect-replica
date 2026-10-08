@@ -111,7 +111,7 @@ function Index() {
             <a href="#conteudo" className="flex items-center justify-center gap-2 px-4 py-3 font-bold text-secondary underline underline-offset-4">QUÉ HAY ADENTRO <ArrowRight className="size-4" /></a>
           </div>
         </div>
-        <img src={HERO} alt="Rafael Molina" className="aspect-[3/4] w-full rounded-3xl object-contain object-center shadow-soft" />
+        <img src={HERO} alt="Rafael Molina" className="aspect-[3/4] w-full rounded-3xl object-cover object-center shadow-soft" />
       </section>
 
       <section className="mx-auto max-w-5xl px-5">
